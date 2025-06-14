@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div>
           <img
-            src={img}
+            src="abc"
             alt="My profile pic"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />

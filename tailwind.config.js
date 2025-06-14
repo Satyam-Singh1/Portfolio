@@ -1,10 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+// tailwind.config.js
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
-    fontFamily: {
-      signature: ["Great Vibes"],
+    extend: {
+      fontFamily: {
+        josefin: ['Josefin Sans', 'sans-serif'],
+        shareTech: ['Share Tech', 'sans-serif'],
+      },
     },
   },
   plugins: [],
