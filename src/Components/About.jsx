@@ -2,11 +2,14 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen bg-gradient-to-b from-gray-800 to-black py-20">
+    <section id="about" className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            About <span className="text-cyan-400">Me</span>
+           <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              About
+            </span>
+            <span className="text-white"> Us </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-600 mx-auto"></div>
         </div>
@@ -42,17 +45,17 @@ export default function About() {
                 <h3 className="text-lg font-semibold text-white mb-2">Frontend</h3>
                 <p className="text-gray-400">React, JavaScript, Tailwind CSS, HTML5, CSS3</p>
               </div>
-              <div className="p-6 bg-gradient-to-br from-green-500/10 to-teal-600/10 rounded-xl border border-green-500/20">
+              <div className="p-6 bg-gradient-to-br from-green-500/10 to-teal-600/10 rounded-xl border border-green-500/20 ">
                 <h3 className="text-lg font-semibold text-white mb-2">Backend</h3>
                 <p className="text-gray-400">Node.js, Express.js, MongoDB, REST APIs</p>
               </div>
             </div>
             <div className="space-y-4 pt-8">
               <div className="p-6 bg-gradient-to-br from-purple-500/10 to-pink-600/10 rounded-xl border border-purple-500/20">
-                <h3 className="text-lg font-semibold text-white mb-2">AI/ML</h3>
-                <p className="text-gray-400">OpenAI API, Gemini AI, Machine Learning</p>
+                <h3 className="text-lg font-semibold text-white mb-2">GenAI</h3>
+                <p className="text-gray-400">OpenAI API, Gemini AI</p>
               </div>
-              <div className="p-6 bg-gradient-to-br from-orange-500/10 to-red-600/10 rounded-xl border border-orange-500/20">
+              <div className="p-6 bg-gradient-to-br from-orange-500/10 to-red-600/10 rounded-xl border border-orange-500/20 ">
                 <h3 className="text-lg font-semibold text-white mb-2">Tools</h3>
                 <p className="text-gray-400">Git, VS Code, Postman, Docker</p>
               </div>
@@ -62,4 +65,4 @@ export default function About() {
       </div>
     </section>
   );
-}
+} 

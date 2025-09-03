@@ -70,8 +70,11 @@ export default function Experience() {
     <section id="experience" className="min-h-screen bg-gradient-to-b from-black to-gray-800 py-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Tech <span className="text-cyan-400">Stack</span>
+           <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+            <span className="text-white">Tech</span>
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Stack
+            </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-400 text-lg">Technologies I work with</p>

@@ -61,14 +61,10 @@ export default function Home() {
             isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             
-            {/* Status Badge */}
-            <div className="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-4 py-2 text-sm">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-slate-300">Available for work</span>
-            </div>
+          
 
             {/* Main Heading */}
-            <div className="space-y-4">
+            <div className="space-y-4 mt-20">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="block text-white">Building</span>
                 <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -81,7 +77,6 @@ export default function Home() {
                 <FaCode className="text-blue-400" />
                 <span>Full Stack Developer</span>
                 <div className="w-1 h-1 bg-slate-500 rounded-full"></div>
-                <span>AI Enthusiast</span>
                 <FaRocket className="text-purple-400" />
               </div>
             </div>
@@ -91,7 +86,7 @@ export default function Home() {
               Passionate Computer Science student crafting modern web applications with 
               <span className="text-blue-400 font-semibold"> React</span>, 
               <span className="text-green-400 font-semibold"> Node.js</span>, and 
-              <span className="text-purple-400 font-semibold"> AI technologies</span>. 
+              <span className="text-purple-400 font-semibold"> Express.js</span>. 
               Turning complex problems into elegant solutions.
             </p>
 
@@ -119,18 +114,7 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center justify-center lg:justify-start space-x-6 pt-4">
-              {[FaGithub, FaLinkedin, FaTwitter].map((Icon, index) => (
-                <button
-                  key={index}
-                  className="group relative p-3 text-slate-400 hover:text-white transition-all duration-300"
-                >
-                  <Icon size={24} className="relative z-10" />
-                  <div className="absolute inset-0 bg-slate-800/50 rounded-lg opacity-0 group-hover:opacity-100 transform scale-0 group-hover:scale-100 transition-all duration-300"></div>
-                </button>
-              ))}
-            </div>
+        
           </div>
 
           {/* Right Content - Hero Image */}
@@ -151,10 +135,8 @@ export default function Home() {
                       <FaCode className="text-white text-3xl" />
                     </div>
                     <div className="text-slate-300">
-                      <p className="text-sm">Replace this div with:</p>
-                      <p className="text-xs text-slate-400 mt-1">
-                        &lt;img src="heroimage.jpg" alt="Satyam Singh" className="w-full h-full object-cover" /&gt;
-                      </p>
+                      <img src="/heroimage.jpg" className="w-full h-full object-cover"  alt="Satyam Singh"/>
+                    
                     </div>
                   </div>
                 </div>
@@ -176,7 +158,7 @@ export default function Home() {
                 Node.js
               </div>
               <div className="absolute top-1/4 -left-12 bg-slate-800/90 backdrop-blur-sm border border-slate-700/50 rounded-lg px-3 py-2 text-sm text-slate-300 shadow-xl animate-float animation-delay-2000">
-                AI/ML
+                Express.js 
               </div>
             </div>
           </div>

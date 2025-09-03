@@ -28,7 +28,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 pt-2 w-full z-50 transition-all duration-300 ${
       scrolled 
         ? 'bg-slate-900/95 backdrop-blur-xl border-b border-slate-700/50 shadow-2xl' 
         : 'bg-transparent'
@@ -36,23 +36,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3 group cursor-pointer">
-            <div className="relative">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-                <FaCode className="text-white text-lg" />
-              </div>
-              <div className="absolute -inset-1 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          
+ <div className="flex flex-col">
+              <span className="text-5xl p-1 pl-0 font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Satyam Singh
               </span>
-              <span className="text-xs text-slate-400 font-medium tracking-wider">
+              <span className="text-xs mt-1 text-slate-400 font-medium tracking-wider">
                 FULL STACK DEVELOPER
               </span>
             </div>
-          </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
             {links.map(({ id, name, to }) => (

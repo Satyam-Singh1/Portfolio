@@ -17,8 +17,8 @@ export default function Portfolio() {
       description: "A modern social media platform with real-time messaging, post sharing, user interactions, and friend connections. Features include live chat, media uploads, and social networking capabilities.",
       gradient: "from-blue-500 to-purple-600",
       tech: ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
-      demoUrl: "https://linkup-demo.netlify.app",
-      codeUrl: "https://github.com/satyam/linkup"
+      demoUrl: "https://68b56d67b03f1c43e846a422--linkupchatapp.netlify.app/",
+      codeUrl: "https://github.com/Satyam-Singh1/LinkUp---A-Real-Time-Chat-App"
     },
     {
       id: 2,
@@ -26,8 +26,8 @@ export default function Portfolio() {
       description: "An AI-powered chat application integrating OpenAI GPT models for intelligent conversations, code assistance, and creative writing with multiple AI personas.",
       gradient: "from-purple-500 to-pink-600",
       tech: ["React", "OpenAI API", "Node.js", "Express", "MongoDB"],
-      demoUrl: "https://neurachat-ai.netlify.app",
-      codeUrl: "https://github.com/satyam/neurachat"
+      demoUrl: "https://neurachat-ai.netlify.app/",
+      codeUrl: "https://github.com/Satyam-Singh1/NeuraChat--AI-Assistance"
     },
     {
   id: 4,
@@ -35,8 +35,8 @@ export default function Portfolio() {
   description: "A web-based application to track student performance, skills, and achievements, with analytics and reporting for talent management and career growth insights.",
   gradient: "from-cyan-500 to-blue-600",
   tech: ["React", "Node.js", "MongoDB", "Express.js"],
-  demoUrl: "https://talent-tracker.netlify.app",
-  codeUrl: "https://github.com/satyam/talent-tracker"
+  codeUrl: "https://github.com/Satyam-Singh1/Talent_Track",
+  demoUrl: "https://github.com/Satyam-Singh1/Talent_Track",
 },
     {
   id: 3,
@@ -44,46 +44,49 @@ export default function Portfolio() {
   description: "A tech resource platform built with React.js and Tailwind CSS, providing curated learning materials, categorized resources, and an interactive UI for seamless exploration.",
   gradient: "from-green-500 to-teal-600",
   tech: ["React", "Tailwind CSS", "JavaScript"],
-  demoUrl: "https://resourcewalla.netlify.app",
-  codeUrl: "https://github.com/satyam/resource-walla"
+  demoUrl: "https://resource-walla.vercel.app/",
+  codeUrl: "https://github.com/Satyam-Singh1/Resource-Walla"
 },
-
-{
-  id: 5,
-  title: "Xplorer",
-  description: "A complete video hosting platform similar to YouTube with video upload, like/dislike, comments, subscriptions, JWT authentication, and secure backend architecture.",
-  gradient: "from-orange-500 to-red-600",
-  tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Mongoose", "Bcrypt"],
-  demoUrl: "https://xplorer-app.netlify.app",
-  codeUrl: "https://github.com/satyam/xplorer"
-},
-{
-  id: 6,
+{id: 5,
   title: "SVTech",
   description: "A business website designed for SVTech with a modern UI/UX, responsive design, and company information showcasing services and technology solutions.",
   gradient: "from-indigo-500 to-purple-600",
   tech: ["React", "Tailwind CSS", "JavaScript"],
-  demoUrl: "https://svtech.netlify.app",
-  codeUrl: "https://github.com/satyam/svtech"
-},
+  demoUrl: "https://svtech.netlify.app/",
+  codeUrl: "https://github.com/Satyam-Singh1/SVTECH"},
+
+{
+  id: 6,
+  title: "Xplorer",
+  description: "A complete video hosting platform similar to YouTube with video upload, like/dislike, comments, subscriptions, JWT authentication, and secure backend architecture.",
+  gradient: "from-orange-500 to-red-600",
+  tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Mongoose", "Bcrypt"],
+  codeUrl: "https://github.com/Satyam-Singh1/Xplorer--Full-Stack-Video-Hosting-Platform",
+  demoUrl: "https://github.com/Satyam-Singh1/Xplorer--Full-Stack-Video-Hosting-Platform"
+}
   ];
 
-  const handleDemoClick = (url) => {
-    // In a real application, this would open the actual demo
-    alert(`Demo would open: ${url}`);
-  };
+ const handleDemoClick = (url) => {
+  if (url) {
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+};
 
-  const handleCodeClick = (url) => {
-    // In a real application, this would open the GitHub repository
-    alert(`GitHub repository would open: ${url}`);
-  };
+const handleCodeClick = (url) => {
+  if (url) {
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+};
 
   return (
     <section id="portfolio" className="min-h-screen bg-gradient-to-b from-gray-800 to-black py-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            My <span className="text-cyan-400">Portfolio</span>
+          <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+            <span className="text-white">My</span>
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-400 text-lg">Check out my latest projects and applications</p>
@@ -91,7 +94,7 @@ export default function Portfolio() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="group bg-gray-800/30 rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300">
+            <div key={project.id} className="group bg-gray-800/30 rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all hover:animate-pulse duration-300 hover:scale-105">
               <ProjectImage title={project.title} gradient={project.gradient} />
               
               <div className="p-6">
@@ -134,7 +137,7 @@ export default function Portfolio() {
         <div className="text-center mt-12">
           <p className="text-gray-400 mb-4">Want to see more projects?</p>
           <button 
-            onClick={() => handleCodeClick('https://github.com/satyam')}
+            onClick={() => handleCodeClick('https://github.com/Satyam-Singh1/')}
             className="inline-flex items-center gap-2 px-6 py-3 border border-cyan-500/50 text-cyan-400 rounded-lg hover:bg-cyan-500/10 transition-all duration-300"
           >
             <FaGithub size={18} />
